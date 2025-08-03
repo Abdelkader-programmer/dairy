@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Cairo:wght@200..1000&family=Caprasimo&family=DM+Serif+Text:ital@0;1&family=Dancing+Script:wght@400..700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Lalezar&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Odibee+Sans&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Reem+Kufi+Fun:wght@400..700&family=Sevillana&family=Teko:wght@300..700&family=Tektur:wght@400..900&family=WDXL+Lubrifont+JP+N&family=WDXL+Lubrifont+SC&display=swap');
+/*   font-family: "Google Sans Code", monospace;  */
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Cairo:wght@200..1000&family=Caprasimo&family=DM+Serif+Text:ital@0;1&family=Dancing+Script:wght@400..700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Lalezar&family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Odibee+Sans&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Reem+Kufi+Fun:wght@400..700&family=Sevillana&family=Teko:wght@300..700&family=Tektur:wght@400..900&family=WDXL+Lubrifont+JP+N&family=WDXL+Lubrifont+SC&display=swap');
+  /* font-family: "Libertinus Sans", sans-serif; */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#body{
+    background-color: #11414f;
+}
+
+/* loading page */
+.father{
+    width: 100%;
+    height: 100vh;
+    background-color: #9abc20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    visibility: hidden;
+    z-index: 5;
+    animation-name: father;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+@keyframes father {
+    0%{
+        visibility: visible;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+.loading_photo{
+    width: 170px;
+    height: 170px;
+    border: 5px solid white;
+    border-radius: 150px;
+    animation-name: loading_photo;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+@keyframes loading_photo {
+    
+    0%{
+        transform: scale(1.2);
+    }
+    50%{
+        transform: rotateY(180deg);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+/* end loading page */
+
+/* header */
+.part_head{
+    width: 100%;
+    margin-top: 10px;
+}
+.main-part1-head{
+    width: 100%;
+    padding: 10px;
+}
+.box_title_page{
+    width: 100%;
+    height: 100px;
+    border: 5px solid #9abc20;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 10px;
+    animation: box_title_page 2s infinite;
+}
+@keyframes box_title_page {
+    0%{
+        border: 5px solid #9abc20;
+    }
+    50%{
+        border: 5px solid #d0f061;
+    }
+    100%{
+        border: 5px solid #9abc20;
+    }
+}
+
+.title_page{
+    background: linear-gradient(to right , #d0f061 , #9abc20);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Google Sans Code", monospace;
+}
+.title_page::after{
+    font-family: "Font Awesome 6 Free";
+    content: "\f31c";
+    font-weight: 900; 
+    margin-left: 10px;
+    color: #9abc20;
+}
+
+.icon-head{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 10px;
+}
+.fa-github{
+    width: 60px;
+    height: 60px;
+    color: #9abc20;
+    transition: 0.25s ease;
+}
+.fa-github:hover{
+    transform: rotateY(360deg);
+    color: white;
+}
+.fa-linkedin{
+    width: 60px;
+    height: 60px;
+    color: #9abc20;
+    transition: 0.25s ease;
+}
+.fa-linkedin:hover{
+    transform: rotateY(360deg);
+    color: rgb(39, 126, 255);
+}
+
+.mod{
+    width: 80px;
+    height: 20px;
+    border: 3px solid #9abc20;
+    border-radius: 70px;
+    margin: auto;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.crt{
+    width: 25px;
+    height: 25px;
+    border-radius: 70px;
+    background: gold;
+    margin-top: -5px;
+    margin-left: -3px;
+    transition: 0.5s ease;
+    /* margin-left: 58px; */
+}
+
+.pen{
+    width: 300px;
+    height: 135px;
+    border: 5px solid #9abc20;
+    border-radius: 30px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 5px;
+}
+.fa-pen{
+    width: 50px;
+    height: 50px;
+    color: #9abc20;
+    margin-left: 200px;
+    animation: fa-pen 5s 1 1s;
+}
+@keyframes fa-pen {
+    0%{
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    25%{
+        margin-left: 220px;
+    }
+    50%{
+        margin-top: 20px;
+    }
+    75%{
+        margin-left: 100px;
+    }
+    100%{
+        margin-top: 0px;
+    }
+}
+.pen-write{
+    color: #9abc20;
+    font-size: xx-large;
+    font-weight: bolder;
+    text-align: center;
+    font-family: "Libertinus Sans", sans-serif;
+    animation: pen-write 5s 1 1s;
+}
+@keyframes pen-write {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.main-title{
+    background: linear-gradient(to right , #d0f061 , #9abc20);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Google Sans Code", monospace;
+    margin-top: 20px;
+}
+.main-title::after{
+    font-family: "Font Awesome 6 Free";
+    content: "\f044";
+    font-weight: 900; 
+    margin-left: 10px;
+    color: #9abc20;
+}
+#place-write{
+    width: 100%;
+    height: 100px;
+    margin-top: 20px;
+    background-color: transparent;
+    border: 5px solid #9abc20;
+    border-radius: 30px;
+    outline: none;
+    text-align: center;
+    color: #d0f061;
+    font-family: "Libertinus Sans", sans-serif;
+    font-size: x-large;
+    font-weight: bold;
+    padding: 10px;
+}
+#place-write:focus{
+    box-shadow: 0px 0px 10px 5px #d0f061;
+}
+
+.lab1{
+    background: linear-gradient(to right , #d0f061 , #9abc20);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Google Sans Code", monospace;
+    font-size: x-large;
+}
+.lab1::after{
+    font-family: "Font Awesome 6 Free";
+    content: "\f073";
+    font-weight: 900; 
+    margin-left: 10px;
+    color: #9abc20;
+}
+#inp-date{
+    margin-left: 10px;
+    text-align: center;
+    border: 2px solid #9abc20;
+    color: #d0f061;
+    border-radius: 15px;
+    background-color: transparent;
+    font-family: "Libertinus Sans", sans-serif;
+}
+
+#ptn-insert{
+    width: 300px;
+    height: 50px;
+    border: 5px solid #9abc20;
+    margin-top: 10px;
+    border-radius: 30px;
+    background-color: transparent;
+    color: #d0f061;
+    font-family: "Google Sans Code", monospace;
+    text-align: left;
+    transition: 0.25s ease;
+    padding-left: 10px;
+    /* padding-left: 200px; */
+}
+#ptn-insert::after{
+    font-family: "Font Awesome 6 Free";
+    content: "\f5ac";
+    font-weight: 900; 
+    margin-left: 10px;
+    color: #9abc20;
+}
+
+#ptn-update{
+    width: 300px;
+    height: 50px;
+    border: 5px solid #9abc20;
+    margin-top: 10px;
+    border-radius: 30px;
+    background-color: transparent;
+    color: #d0f061;
+    font-family: "Google Sans Code", monospace;
+    text-align: left;
+    transition: 0.25s ease;
+    padding-left: 10px;
+    /* padding-left: 195px; */
+}
+#ptn-update::after{
+    font-family: "Font Awesome 6 Free";
+    content: "\f591";
+    font-weight: 900; 
+    margin-left: 10px;
+    color: #9abc20;
+}
+
+/* end header */
+
+/* written */
+.part_body{
+    width: 95%;
+    margin-top: 10px;
+    padding: 10px;
+    animation: part_body;
+    animation-timeline: view();
+    animation-range: entry 0 cover 50% ;
+}
+@keyframes part_body {
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+.written{
+    width: 100%;
+    padding: 10px;
+    border: 5px solid #9abc20;
+    border-radius: 30px;
+    margin: auto;
+    margin-top: 10px;
+    animation: box_title_page 2s infinite;
+}
+@keyframes box_title_page {
+    0%{
+        border: 5px solid #9abc20;
+    }
+    50%{
+        border: 5px solid #d0f061;
+    }
+    100%{
+        border: 5px solid #9abc20;
+    }
+}
+.written::selection{
+    background-color: gold;
+    color: black;
+}
+
+.diary-content{
+    background: linear-gradient(to right , #d0f061 , #9abc20);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Google Sans Code", monospace;
+}
+.diary-content::before{
+    font-family: "Font Awesome 6 Free";
+    content: "\f31c";
+    font-weight: 900; 
+    margin-left: 10px;
+}
+
+.hr1{
+    border: 5px solid #9abc20;
+    border-radius: 20px;
+}
+
+.diary-content-date{
+    background: linear-gradient(to right , #d0f061 , #9abc20);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Google Sans Code", monospace;
+}
+.diary-content-date::before{
+    font-family: "Font Awesome 6 Free";
+    content: "\f073";
+    font-weight: 900; 
+    margin-right: 10px;
+}
+
+.fa-heart-circle-check{
+    width: 100px;
+    height: 100px;
+    color: black;
+    cursor: pointer;
+}
+
+.user-ptn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+#ptn-update2{
+    width: 130px;
+    height: 50px;
+    border: 5px solid gold;
+    margin-top: 10px;
+    border-radius: 30px;
+    background-color: transparent;
+    color: gold;
+    font-family: "Google Sans Code", monospace;
+    text-align: left;
+    transition: 0.25s ease;
+    padding-left: 10px;
+    /* padding-left: 80px; */
+}
+#ptn-update2::after{
+    font-family: "Font Awesome 6 Free";
+    content: "\f0ad";
+    font-weight: 900; 
+    margin-left: 10px;
+    color: gold;
+}
+
+#ptn-delete{
+    width: 130px;
+    height: 50px;
+    border: 5px solid red;
+    margin-top: 10px;
+    border-radius: 30px;
+    background-color: transparent;
+    color: red;
+    font-family: "Google Sans Code", monospace;
+    text-align: left;
+    transition: 0.25s ease;
+    padding-left: 10px;
+    /* padding-left: 80px; */
+}
+#ptn-delete::after{
+    font-family: "Font Awesome 6 Free";
+    content: "\f1f8";
+    font-weight: 900; 
+    margin-left: 10px;
+    color: red;
+}

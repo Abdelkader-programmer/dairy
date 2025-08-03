@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Cairo:wght@200..1000&family=Caprasimo&family=DM+Serif+Text:ital@0;1&family=Dancing+Script:wght@400..700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Lalezar&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Odibee+Sans&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Reem+Kufi+Fun:wght@400..700&family=Sevillana&family=Teko:wght@300..700&family=Tektur:wght@400..900&family=WDXL+Lubrifont+JP+N&family=WDXL+Lubrifont+SC&display=swap');
+/*   font-family: "Google Sans Code", monospace;  */
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Cairo:wght@200..1000&family=Caprasimo&family=DM+Serif+Text:ital@0;1&family=Dancing+Script:wght@400..700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Lalezar&family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Odibee+Sans&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Reem+Kufi+Fun:wght@400..700&family=Sevillana&family=Teko:wght@300..700&family=Tektur:wght@400..900&family=WDXL+Lubrifont+JP+N&family=WDXL+Lubrifont+SC&display=swap');
+  /* font-family: "Libertinus Sans", sans-serif; */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #11414f;
+}
+
+header{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.title{
+    background: linear-gradient(to right , #d0f061 , #9abc20);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Google Sans Code", monospace;
+    font-size: 50px;
+    animation: title 1s infinite;
+}
+@keyframes title {
+    0%{
+        background: linear-gradient(to right , #d0f061 , #9abc20);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    50%{
+        background: linear-gradient(to right , #9abc20 , #d0f061);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    100%{
+        background: linear-gradient(to right , #d0f061 , #9abc20);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+.title::before{
+    font-family: "Font Awesome 6 Free";
+    content: "\f249";
+    font-weight: 900; 
+    margin-right: 10px;
+    color: #9abc20;
+}
+
+.sic1{
+    width: 100%;
+    text-align: center;
+}
+.photo{
+    width: 150px;
+    height: 150px;
+    margin-top: 30px;
+    border-radius: 0px 30px 0px 30px;
+    border: 5px solid gold;
+    box-shadow: 10px 0px 20px 5px gray;
+    rotate: 20deg;
+}
+
+.pro{
+    background: linear-gradient(to right , #d0f061 , #9abc20);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Google Sans Code", monospace;
+    margin-top: 40px;
+}
+.pro::after{
+    font-family: "Font Awesome 6 Free";
+    content: "\f109";
+    font-weight: 900; 
+    margin-left: 10px;
+    color: #9abc20;
+}
+.pro::before{
+    font-family: "Font Awesome 6 Free";
+    content: "\f121";
+    font-weight: 900; 
+    margin-right: 10px;
+    color: #9abc20;
+}
+
+.box1{
+    width: 95%;
+    margin-top: 20px;
+    padding: 10px;
+}
+.main-box{
+    width: 100%;
+    border: 3px solid gold;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.lp1{
+    font-size: xx-large;
+    font-family: "Libertinus Sans", sans-serif;
+    background: linear-gradient(to right , #d0f061 , #9abc20);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.inp1{
+    width: 90%;
+    height: 50px;
+    outline: none;
+    border: 2px solid #9abc20;
+    background-color: transparent;
+    border-radius: 15px;
+    color: gold;
+    text-align: center;
+    font-size: larger;
+    font-family: "Libertinus Sans", sans-serif;
+}
+.inp1:focus{
+    box-shadow: 0px 0px 4px 2px gold;
+}
+
+.inp2{
+    width: 90%;
+    height: 50px;
+    outline: none;
+    border: 2px solid #9abc20;
+    background-color: transparent;
+    border-radius: 15px;
+    color: gold;
+    text-align: center;
+    font-size: larger;
+    font-family: "Libertinus Sans", sans-serif;
+}
+.inp2:focus{
+    box-shadow: 0px 0px 4px 2px gold;
+}
+
+.hr{
+    width: 100%;
+    border: 3px solid gold;
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#ptn1{
+    width: 100px;
+    height: 50px;
+    margin-top: 10px;
+    border: none;
+    background-color: transparent;
+    border: 3px solid gold;
+    border-radius: 20px;
+}
+.fa-thumbs-up{
+    width: 30px;
+    height: 30px;
+    margin-top: 5px;
+    color: gold;
+}
+
+@media (max-width : 450px) {
+    .pro{
+    background: linear-gradient(to right , #d0f061 , #9abc20);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Google Sans Code", monospace;
+    margin-top: 40px;
+    font-size: larger;
+}
+.pro::after{
+    font-family: "Font Awesome 6 Free";
+    content: "\f109";
+    font-weight: 900; 
+    margin-left: 10px;
+    color: #9abc20;
+}
+.pro::before{
+    font-family: "Font Awesome 6 Free";
+    content: "\f121";
+    font-weight: 900; 
+    margin-right: 10px;
+    color: #9abc20;
+}
+}

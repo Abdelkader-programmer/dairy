@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-Diary</title>
+    <!-- link bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <!-- link style font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./all.min.css">
+    <!-- link sweetAlert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- link icon -->
+    <link rel="icon" href="./imges/logo.jpg">
+    <!-- link css -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body id="body">
+    <!-- loading page -->
+    <div>
+        <div class="father">
+            <img src="./imges/logo.jpg" alt="" class="loading_photo">
+        </div>
+    </div>
+    <!-- end loading page -->
+
+    <header>
+        <div class="container text-center part_head">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="main-part1-head">
+                        <div class="box_title_page">
+                            <h1 class="title_page">My-Diary</h1>
+                        </div>
+                        <div class="icon-head">
+                            <a title="Github" href="https://github.com/Abdelkader-programmer" target="_blank"><i class="fa-brands fa-github" id="link1" onclick="ico1()"></i></a>
+                            <a title="Linkedin" href="https://www.linkedin.com/in/abdelkader-mahmoud-921805303/" target="_blank"><i class="fa-brands fa-linkedin" id="link2" onclick="ico2()"></i></a>
+                        </div>
+                        <div class="mod" id="mod" onclick="darkMode()">
+                            <div class="crt" id="light"></div>
+                        </div>
+                        <div>
+                            <div class="pen">
+                                <i class="fa-solid fa-pen"></i>
+                                <p class="pen-write">Write your diary</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="main-part1-head">
+                        <h1 class="main-title">Write Your Diary</h1>
+                        <textarea id="place-write" onclick="Shad()"></textarea>
+                        <label for="inp-date" class="lab1">This Day</label><input type="date"  id="inp-date">
+                        <div>
+                            <button type="button" class="d-inline" id="ptn-insert" onmousedown="insert()" onmouseup="insert2()">Write</button>
+                        </div>
+                        <div>
+                            <button type="button" id="ptn-update" class="d-none" onmousedown="update()" onmouseup="update2()" onclick="toUpdate2()">Update</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="sic1">
+        <div class="container text-center part_body">
+            <div class="row" id="rowDisplay">
+            </div>
+        </div>
+    </section>
+
+    <!-- link js -->
+    <script src="main.js"></script>
+    <!-- link js font Awesome -->
+    <script src="./all.min.js"></script>
+</body>
+</html>
